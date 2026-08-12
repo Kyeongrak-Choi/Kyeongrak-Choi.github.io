@@ -7,6 +7,7 @@
     <meta name="description" content="개발하며 배운 것과 생각을 기록하는 Kyeongrak의 기술 블로그">
     <title>Kyeongrak — 개발 기록</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/posts.js" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -33,32 +34,8 @@
           <h2 id="recent-title">최근 글</h2>
           <a href="posts.html">전체 보기</a>
         </div>
-
-        <div class="post-list">
-          <article class="post-item">
-            <a class="post-link" href="posts/getting-started.html">
-              <div>
-                <h3>새 블로그를 시작하며</h3>
-                <p>복잡한 도구 없이 HTML과 CSS만으로 기술 블로그를 만든 과정</p>
-              </div>
-              <div class="post-meta">
-                <time datetime="2026-08-12">2026. 08. 12.</time>
-                <ul class="tag-list" aria-label="태그">
-                  <li>blog</li>
-                  <li>html</li>
-                </ul>
-              </div>
-            </a>
-          </article>
-          <article class="post-item coming-soon">
-            <div class="post-link" aria-label="곧 새로운 글이 올라옵니다">
-              <div>
-                <h3>다음 글을 준비하고 있습니다</h3>
-                <p>배운 것을 꾸준히 기록해 나갈 예정입니다.</p>
-              </div>
-              <div class="post-meta"><span>Coming soon</span></div>
-            </div>
-          </article>
+        <div class="post-list" data-post-list data-post-limit="3" aria-live="polite" aria-busy="true">
+          <p class="post-status">최근 글을 불러오는 중입니다…</p>
         </div>
       </section>
     </main>
@@ -66,7 +43,7 @@
     <footer class="site-footer">
       <div class="container footer-inner">
         <span>© 2026 Kyeongrak</span>
-        <span>Built with HTML &amp; CSS</span>
+        <span>Built with HTML, CSS &amp; JavaScript</span>
       </div>
     </footer>
   </body>

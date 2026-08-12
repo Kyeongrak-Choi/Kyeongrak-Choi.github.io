@@ -182,10 +182,12 @@ main {
   text-decoration: none;
 }
 
+.post-link:hover h2,
 .post-link:hover h3 {
   color: var(--accent-hover);
 }
 
+.post-link h2,
 .post-link h3 {
   margin: 0 0 6px;
   font-size: 1.08rem;
@@ -208,6 +210,18 @@ main {
   font-family: var(--font-mono);
   font-size: 0.76rem;
   white-space: nowrap;
+}
+
+.post-status {
+  margin: 0;
+  padding: 28px 4px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.92rem;
+}
+
+.post-error {
+  color: #f2aaaa;
 }
 
 .tag-list {
@@ -323,6 +337,22 @@ main {
 
 .article-body p {
   margin: 0 0 24px;
+}
+
+.article-body ul,
+.article-body ol {
+  margin: 0 0 24px;
+  padding-left: 1.5rem;
+}
+
+.article-body li + li {
+  margin-top: 6px;
+}
+
+.article-body hr {
+  margin: 40px 0;
+  border: 0;
+  border-top: 1px solid var(--border);
 }
 
 .article-body h2 {
