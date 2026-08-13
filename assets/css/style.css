@@ -168,7 +168,13 @@ main {
 }
 
 .encore-card-grid {
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.encore-card-grid .card {
+  width: 100%;
 }
 
 .card {

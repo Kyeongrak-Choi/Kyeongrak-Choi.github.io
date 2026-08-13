@@ -251,7 +251,7 @@
       document.title = `${post.title} — Kyeongrak`;
       container.innerHTML = `
         <header class="article-header">
-          <a class="back-link" href="posts.html"><span aria-hidden="true">←</span> 글 목록</a>
+          <a class="back-link" href="posts.html"><span aria-hidden="true">←</span> Posts</a>
           <h1>${escapeHtml(post.title)}</h1>
           ${post.description ? `<p class="article-summary">${escapeHtml(post.description)}</p>` : ""}
           <div class="article-meta">
