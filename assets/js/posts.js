@@ -133,8 +133,12 @@
     try {
       const posts = await loadPosts();
       for (const container of containers) {
-        const limit = Number(container.dataset.postLimit) || posts.length;
-        const visible = posts.slice(0, limit);
+        const category = container.dataset.postCategory?.trim().toLowerCase();
+        const filtered = category
+          ? posts.filter((post) => post.category.toLowerCase() === category)
+          : posts;
+        const limit = Number(container.dataset.postLimit) || filtered.length;
+        const visible = filtered.slice(0, limit);
         container.innerHTML = visible.length
           ? visible.map(renderPostCard).join("")
           : '<p class="post-status">아직 등록된 글이 없습니다.</p>';

@@ -4,10 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#0d1117">
-    <meta name="description" content="Kyeongrak 기술 블로그의 글 목록">
-    <title>글 — Kyeongrak</title>
+    <meta name="description" content="Encore 교육 과정의 학습과 회고 기록">
+    <title>Encore — Kyeongrak</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/posts.js" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -15,8 +14,8 @@
         <a class="site-title" href="index.html" aria-label="홈으로 이동">Kyeongrak</a>
         <nav class="site-nav" aria-label="주요 메뉴">
           <a href="index.html">Home</a>
-          <a href="encore.html">Encore</a>
-          <a class="active" href="posts.html" aria-current="page">Posting</a>
+          <a class="active" href="encore.html" aria-current="page">Encore</a>
+          <a href="posts.html">Posting</a>
           <a href="https://github.com/Kyeongrak-Choi" target="_blank" rel="noopener noreferrer">GitHub</a>
         </nav>
       </div>
@@ -24,19 +23,18 @@
 
     <main class="container page-main">
       <header class="page-header">
-        <p class="eyebrow">ARCHIVE</p>
-        <h1>글</h1>
-        <p>개발하며 배운 것과 생각을 기록합니다.</p>
+        <p class="eyebrow">ENCORE</p>
+        <h1>Encore</h1>
+        <p>교육 과정에서 배우고 경험한 내용을 기록합니다.</p>
       </header>
 
-      <div
-        id="post-list"
-        class="post-list dynamic-post-list"
-        data-post-list
-        aria-live="polite"
-        aria-busy="true"
-      >
-        <p class="post-status">글 목록을 불러오는 중입니다…</p>
+      <div class="card-grid">
+        <a class="card" href="encore-memories.html">
+          <span class="card-icon" aria-hidden="true">📝</span>
+          <h2>회고록</h2>
+          <p>주간 및 월간 회고를 모아둔 공간입니다.</p>
+          <span class="card-link">회고록 보기 <span aria-hidden="true">→</span></span>
+        </a>
       </div>
     </main>
 
