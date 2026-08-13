@@ -168,42 +168,195 @@ main {
 }
 
 .card {
-  display: block;
-  padding: 28px;
+  position: relative;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 22px;
+  overflow: hidden;
+  padding: 30px;
   border: 1px solid var(--border);
-  border-radius: 10px;
-  background: var(--bg-subtle);
+  border-radius: 16px;
+  background:
+    radial-gradient(circle at 0 0, rgba(88, 166, 255, 0.12), transparent 38%),
+    linear-gradient(135deg, #171d26, #11161d);
   color: var(--text);
-  transition: border-color 160ms ease, transform 160ms ease;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+  transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
 }
 
 .card:hover {
-  border-color: var(--accent);
+  border-color: rgba(88, 166, 255, 0.72);
   color: var(--text);
+  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.28), 0 0 0 1px rgba(88, 166, 255, 0.08);
   text-decoration: none;
-  transform: translateY(-2px);
+  transform: translateY(-3px);
 }
 
 .card-icon {
-  display: block;
-  margin-bottom: 16px;
-  font-size: 1.6rem;
+  display: grid;
+  width: 62px;
+  height: 62px;
+  place-items: center;
+  border: 1px solid rgba(88, 166, 255, 0.28);
+  border-radius: 15px;
+  background: rgba(88, 166, 255, 0.1);
+  color: var(--accent-hover);
 }
 
-.card h2 {
+.card-icon svg {
+  width: 29px;
+  height: 29px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.7;
+}
+
+.card h3 {
   margin: 0;
-  font-size: 1.3rem;
+  font-size: 1.35rem;
+  line-height: 1.4;
 }
 
 .card p {
-  margin: 8px 0 22px;
+  margin: 7px 0 0;
   color: var(--text-muted);
+  font-size: 0.93rem;
+}
+
+.card-label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
 }
 
 .card-link {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  color: var(--text-muted);
+  transition: background 180ms ease, border-color 180ms ease, color 180ms ease, transform 180ms ease;
+}
+
+.card-link svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.card:hover .card-link {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: #07111e;
+  transform: translateX(2px);
+}
+
+.encore-main {
+  position: relative;
+}
+
+.encore-hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 180px;
+  align-items: center;
+  gap: 36px;
+  overflow: hidden;
+  margin-bottom: 66px;
+  padding: 48px;
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  background:
+    radial-gradient(circle at 82% 18%, rgba(88, 166, 255, 0.18), transparent 34%),
+    linear-gradient(145deg, rgba(22, 27, 34, 0.96), rgba(13, 17, 23, 0.98));
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.24);
+}
+
+.encore-hero::after {
+  position: absolute;
+  right: -60px;
+  bottom: -85px;
+  width: 230px;
+  height: 230px;
+  border: 1px solid rgba(88, 166, 255, 0.1);
+  border-radius: 50%;
+  content: "";
+}
+
+.encore-hero h1 {
+  margin-bottom: 18px;
+  font-size: clamp(2.35rem, 6vw, 3.55rem);
+  line-height: 1.16;
+  letter-spacing: -0.045em;
+}
+
+.encore-hero h1 span {
+  color: var(--accent-hover);
+}
+
+.encore-hero-copy > p:last-child {
+  max-width: 470px;
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.encore-hero-mark {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+}
+
+.encore-hero-mark svg {
+  width: 160px;
+  height: 160px;
+  fill: none;
+  stroke: rgba(121, 192, 255, 0.72);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3;
+}
+
+.encore-hero-mark circle {
+  fill: rgba(88, 166, 255, 0.06);
+  stroke: rgba(88, 166, 255, 0.18);
+  stroke-dasharray: 5 8;
+}
+
+.encore-section-heading {
+  align-items: end;
+  margin-bottom: 20px;
+}
+
+.encore-section-heading > div h2 {
+  margin: 0;
+}
+
+.encore-section-heading > span {
+  color: var(--text-muted);
+  font-size: 0.82rem;
+}
+
+.section-kicker {
+  margin: 0 0 5px;
   color: var(--accent);
-  font-size: 0.9rem;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
   font-weight: 600;
+  letter-spacing: 0.1em;
 }
 
 .post-list {
@@ -534,6 +687,39 @@ main {
 
   .hero {
     padding-block: 70px 60px;
+  }
+
+  .encore-main {
+    padding-top: 38px;
+  }
+
+  .encore-hero {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 30px 26px;
+  }
+
+  .encore-hero-mark {
+    display: none;
+  }
+
+  .encore-section-heading > span {
+    display: none;
+  }
+
+  .card {
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 18px;
+    padding: 24px 20px;
+  }
+
+  .card-icon {
+    width: 52px;
+    height: 52px;
+  }
+
+  .card-link {
+    display: none;
   }
 
   .post-link {
