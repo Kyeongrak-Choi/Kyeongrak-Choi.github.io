@@ -8,7 +8,7 @@
     <title>Encore — Kyeongrak</title>
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
-  <body class="encore-page">
+  <body>
     <header class="site-header">
       <div class="container header-inner">
         <a class="site-title" href="index.html" aria-label="홈으로 이동">Kyeongrak</a>
@@ -21,68 +21,48 @@
       </div>
     </header>
 
-    <main class="container page-main encore-main">
-      <header class="page-header encore-hero">
-        <div class="encore-hero-copy">
-          <p class="eyebrow">ENCORE · LEARNING LOG</p>
-          <h1>배움의 순간을<br><span>성장의 기록으로.</span></h1>
-          <p>Encore 교육 과정에서 배우고, 부딪히고, 성장한 순간들을 차곡차곡 기록합니다.</p>
-        </div>
-        <div class="encore-hero-mark" aria-hidden="true">
-          <svg viewBox="0 0 160 160" role="img">
-            <circle cx="80" cy="80" r="54"></circle>
-            <path d="M50 91V68c0-8 6-14 14-14h32c8 0 14 6 14 14v23"></path>
-            <path d="M43 91h74l-8 15H51l-8-15Z"></path>
-            <path d="m69 77 8 8 16-18"></path>
-          </svg>
-        </div>
+    <main class="container page-main">
+      <header class="page-header">
+        <p class="eyebrow">ENCORE</p>
+        <h1>Encore</h1>
+        <p>교육 과정에서 배우고 경험한 내용을 기록합니다.</p>
       </header>
 
       <section aria-labelledby="encore-menu-title">
-        <div class="section-heading encore-section-heading">
-          <div>
-            <p class="section-kicker">COLLECTION</p>
-            <h2 id="encore-menu-title">Encore 기록</h2>
-          </div>
-          <span>꾸준히 쌓아가는 학습 아카이브</span>
+        <div class="section-heading">
+          <h2 id="encore-menu-title">기록</h2>
         </div>
 
-        <div class="card-grid encore-card-grid">
-          <a class="card" href="encore-memories.html">
-            <span class="card-icon" aria-hidden="true">
+        <nav class="encore-menu" aria-label="Encore 기록 메뉴">
+          <a class="encore-menu-item" href="encore-memories.html">
+            <span class="encore-menu-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" focusable="false">
                 <path d="M6 3.75h9.5A2.5 2.5 0 0 1 18 6.25v11.5a2.5 2.5 0 0 1-2.5 2.5H6a2 2 0 0 1-2-2V5.75a2 2 0 0 1 2-2Z"></path>
                 <path d="M8 3.75v16.5M11.5 8h3M11.5 12h3"></path>
               </svg>
             </span>
-            <span class="card-content">
-              <span class="card-label">RETROSPECTIVE</span>
+            <span class="encore-menu-content">
               <h3>회고록</h3>
               <p>한 주의 배움과 고민, 다음 성장을 위한 계획을 정리합니다.</p>
             </span>
-            <span class="card-link" aria-hidden="true">
-              <svg viewBox="0 0 24 24" focusable="false"><path d="m9 18 6-6-6-6"></path></svg>
-            </span>
+            <span class="encore-menu-arrow" aria-hidden="true">→</span>
           </a>
 
-          <a class="card project-card" href="encore-projects.html">
-            <span class="card-icon" aria-hidden="true">
+          <a class="encore-menu-item" href="encore-projects.html">
+            <span class="encore-menu-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" focusable="false">
                 <path d="M3.75 7.5h6l1.7 2h8.8v8.25a2.5 2.5 0 0 1-2.5 2.5H6.25a2.5 2.5 0 0 1-2.5-2.5V7.5Z"></path>
                 <path d="M3.75 7.5V6.25a2.5 2.5 0 0 1 2.5-2.5H9l1.75 2h7a2.5 2.5 0 0 1 2.5 2.5V9.5"></path>
                 <path d="m10 13-2 2 2 2M14 13l2 2-2 2"></path>
               </svg>
             </span>
-            <span class="card-content">
-              <span class="card-label">PROJECT</span>
+            <span class="encore-menu-content">
               <h3>프로젝트</h3>
               <p>Encore 과정에서 만든 프로젝트와 구현 과정을 기록합니다.</p>
             </span>
-            <span class="card-link" aria-hidden="true">
-              <svg viewBox="0 0 24 24" focusable="false"><path d="m9 18 6-6-6-6"></path></svg>
-            </span>
+            <span class="encore-menu-arrow" aria-hidden="true">→</span>
           </a>
-        </div>
+        </nav>
       </section>
     </main>
 
