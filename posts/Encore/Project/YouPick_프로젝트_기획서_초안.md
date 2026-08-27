@@ -2,7 +2,7 @@
 title: YouPick 프로젝트 기획서
 date: 2026-08-27
 description: 사용자가 입력한 조건을 기준으로 YouTube 영상을 선별하고 추천하는 서비스 기획 초안입니다.
-tags: [Project]
+tags: [Encore, Project]
 ---
 
 # YouPick 프로젝트 기획서
