@@ -1,3 +1,10 @@
+---
+title: YouPick 프로젝트 기획서
+date: 2026-08-27
+description: 사용자의 현재 의도와 조건을 기준으로 YouTube 영상을 선별하고 추천하는 서비스 기획서입니다.
+tags: [Encore, Project, YouPick, FastAPI, YouTube]
+---
+
 # YouPick 프로젝트 기획서
 
 > **한 줄 소개:** 유튜브 시청 기록이나 기존 추천 알고리즘이 아니라, 사용자가 지금 입력한 주제와 조건을 기준으로 필요한 영상을 찾아 추천하는 서비스
