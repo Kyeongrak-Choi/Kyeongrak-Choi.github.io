@@ -70,7 +70,7 @@ YouPick의 목적은 유튜브 알고리즘 전체를 대체하는 것이 아니
 → 추천 이유와 함께 결과 제공
 ```
  
- 
+### 5. 참고사항 
 ### Shorts 판별 방식
  
 YouTube Data API에는 영상이 Shorts인지 여부를 직접 알려주는 필드가 없다. 따라서 `videos.list`로 조회한 `contentDetails.duration`이 60초 이하인 경우를 Shorts로 간주하는 방식을 사용한다. 완벽한 판별은 아니지만 현재 API 환경에서 가장 널리 쓰이는 방법이다.
