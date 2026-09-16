@@ -4,7 +4,6 @@ date: 2026-09-16
 description: 사용자의 계획을 끝까지 의심하고 허점을 찾아내는 AI 악마의 변호사
 tags: [Encore, Project]
 ---
-
 # 😈 AI Devil's Advocate
 ## **"당신의 계획, 제가 한번 깨보겠습니다."**
 
